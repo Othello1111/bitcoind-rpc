@@ -1,6 +1,6 @@
 {
-  "name": "bitcoind-rpc",
-  "description": "Bitcoin Client Library to connect to Bitcoin Core via RPC",
+  "name": "bcored-rpc",
+  "description": "Bitcoin Cored Client Library to connect to Bitcoin Cored via RPC",
   "version": "0.7.2",
   "author": {
     "name": "Stephen Pair",
@@ -30,13 +30,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitpay/bitcoind-rpc"
+    "url": "git+https://github.com/bitcoin-cored/bitcoind-rpc.git"
   },
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha test -R spec",
-    "coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- --recursive"
+    "test": "mocha test -R spec",
+    "coverage": "istanbul cover node_modules/.bin/_mocha -- --recursive"
   },
   "devDependencies": {
     "async": "^0.9.0",
@@ -47,7 +47,7 @@
     "sinon": "^1.12.2"
   },
   "bugs": {
-    "url": "https://github.com/bitpay/bitcoind-rpc/issues"
+    "url": "https://github.com/bitcoin-cored/bitcoind-rpc/issues"
   },
-  "homepage": "https://github.com/bitpay/bitcoind-rpc"
+  "homepage": "https://github.com/bitcoin-cored/bitcoind-rpc"
 }
